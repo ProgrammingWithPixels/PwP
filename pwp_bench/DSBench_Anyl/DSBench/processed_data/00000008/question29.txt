@@ -1,0 +1,1 @@
+Question 29 What is the total profit (in $) for Hub 3 in Scenario 1a? [4 marks] A. $4,035,199 B. $4,035,200 C. $4,035,201 D. $4,035,202 E. $4,035,203 F. $4,035,204 G. $4,035,205 H. $4,035,206 I. $4,035,207  

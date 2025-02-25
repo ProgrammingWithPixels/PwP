@@ -1,0 +1,1 @@
+Question 35 Using Profile 1 of cash available from operations, what are the total dividends paid to the shareholders? [4 marks] A. $914,772 B. $914,773 C. $914,774 D. $914,775 E. $914,776 F. $914,777 G. $914,778 H. $914,779 I. $914,78

@@ -1,0 +1,1 @@
+QUESTION 2 What is the average number of rolls per game? a) Less than 2.7 b) 2.7 – 2.9 c) 2.9 - 3.1 d) More than 3.1

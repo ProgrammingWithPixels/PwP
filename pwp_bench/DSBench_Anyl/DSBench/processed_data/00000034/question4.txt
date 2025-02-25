@@ -1,0 +1,1 @@
+QUESTION 4 What was sales person Wendel’s total Sales over the analysis period? Select the closest answer.  a. $15,000 b. $30,000 c. $300,000 d. $500,000  

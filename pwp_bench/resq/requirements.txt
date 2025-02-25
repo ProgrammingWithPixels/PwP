@@ -1,0 +1,5 @@
+datasets==2.18.0
+aiofiles==23.2.1
+types-aiofiles==23.2.0.20240403
+pydantic==2.7.1
+tqdm==4.65.0

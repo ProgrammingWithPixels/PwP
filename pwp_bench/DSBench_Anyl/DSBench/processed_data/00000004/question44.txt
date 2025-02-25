@@ -1,0 +1,1 @@
+Question 44 What is the total tonnage on which additional gate fees (Rev 3) are charged (after adjusting for the note under Rev 2 but before adjusting for the payment timing)? [5 marks] A. 79,448 B. 79,449 C. 79,450 D. 79,451 E. 79,452 F. 79,453 G. 79,454 H. 79,455 I. 79,456 

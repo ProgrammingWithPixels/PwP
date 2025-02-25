@@ -1,0 +1,1 @@
+Question 5   The highest IRR achieved is by exiting in which year?  a. Year 2    b. Year 5    c. Year 6    d. Year 8

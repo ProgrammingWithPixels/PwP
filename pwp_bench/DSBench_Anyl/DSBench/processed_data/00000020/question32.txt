@@ -1,0 +1,1 @@
+Question 32 Under the units of production method, what is the total depreciation for all asset classes in 2030? [3 marks] A. 251,901,360 B. 251,901,361 C. 251,901,362 D. 251,901,363 E. 251,901,364 F. 251,901,365 G. 251,901,366 H. 251,901,367 I. 251,901,36

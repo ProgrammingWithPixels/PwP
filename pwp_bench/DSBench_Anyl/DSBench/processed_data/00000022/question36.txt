@@ -1,0 +1,1 @@
+Question 36 What is the IRR earned by the equity provider for the project (to 1 decimal place)? Use the XIRR function to answer this question. A. 16.6% B. 16.7% C. 16.8% D. 16.9% E. 17.0% F. 17.1% G. 17.2% H. 17.3% I. 17.4%  

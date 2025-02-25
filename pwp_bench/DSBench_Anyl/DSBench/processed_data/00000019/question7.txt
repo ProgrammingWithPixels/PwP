@@ -1,0 +1,1 @@
+Question 7 What is the total amount of Core Deposits into Alice’s account over the life of the account? [3 marks] A. $193,186 B. $193,187 C. $193,188 D. $193,189 E. $193,190 F. $193,191 G. $193,192 H. $193,193 I. $193,194  

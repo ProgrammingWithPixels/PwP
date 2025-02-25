@@ -1,0 +1,1 @@
+QUESTION 4 What proportion of the total interest expense for Tranche 4 is capitalized? Select the closest option.  a. 46.2% b. 46.4% c. 46.6% d. 47.8%  

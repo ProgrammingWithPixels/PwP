@@ -1,0 +1,12 @@
+google-generativeai
+docker
+pillow
+opencv-python
+tqdm
+numpy
+pandas
+matplotlib
+requests
+litellm
+datasets
+gdown

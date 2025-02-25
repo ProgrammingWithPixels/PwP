@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pwp"
+version = "0.1.0"
+description = "Programming with Pixels package"
+readme = "README.md"
+authors = [
+    {name = "PWP Team", email = "author@example.com"}
+]
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "google-generativeai",
+    "docker",
+    "pillow",
+    "opencv-python",
+    "tqdm",
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "requests",
+    "litellm",
+    "datasets",
+]
+requires-python = ">=3.6"
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/pwp"
+"Bug Tracker" = "https://github.com/yourusername/pwp/issues"
+
+[project.scripts]
+pwp = "pwp.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"] 

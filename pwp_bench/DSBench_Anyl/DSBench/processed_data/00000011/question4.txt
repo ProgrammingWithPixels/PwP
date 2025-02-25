@@ -1,0 +1,1 @@
+Question 4 What is the total cost for all flights to Lime City? a. $46,242 b. $47,985 c. $48,930 d. $49,01

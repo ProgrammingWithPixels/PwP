@@ -1,0 +1,1 @@
+Question 2 What is your average electricity usage per hour in February?  a. 0.760kWh b. 0.784kWh c. 0.808kWh d. 0.833kWh 

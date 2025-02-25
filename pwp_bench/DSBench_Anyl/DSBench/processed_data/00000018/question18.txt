@@ -1,0 +1,1 @@
+Question 18 What are the costs for Property 3 in October 2020? [2 marks] A. $3,118 B. $3,119 C. $3,120 D. $3,121 E. $3,122 F. $3,123 G. $3,124 H. $3,125 I. $3,12
