@@ -87,24 +87,28 @@ class PwP:
                 self.client.images.get(image_name)
             except docker.errors.ImageNotFound:
                 print(f"Image '{image_name}' not found. Building image...")
+                current_dir = os.path.dirname(os.path.abspath(__file__))
+                docker_path = os.path.join(os.path.dirname(os.path.dirname(current_dir)), "pwp/docker/")
                 if self.vscode_type == "opensource":
                     # Make sure that we have code-oss downloaded in docker/VSCode-linux-x64/code-oss is present, if not download it
-                    if not os.path.exists("docker/VSCode-linux-x64/code-oss"):
+
+                    code_oss_path = os.path.join(docker_path, "VSCode-linux-x64/code-oss")
+                    if not os.path.exists(code_oss_path):
                         print("Downloading code-oss")
                         # Download code-oss
                         # cd docker/VSCode-linux-x64/
                         # gdown https://drive.google.com/file/d/1Twlo2ADS0f-FKR3TJ2fzDmzAB2y7SVBR/view?usp=sharing
                         import gdown
 
-                        gdown.download(
-                            "https://drive.google.com/file/d/1Twlo2ADS0f-FKR3TJ2fzDmzAB2y7SVBR/view?usp=sharing",
-                            "docker/VSCode-linux-x64/code-oss",
-                        )
+                        # Get the path relative to the current file
+                        
+                        
+                        gdown.download(id="1Twlo2ADS0f-FKR3TJ2fzDmzAB2y7SVBR",output=code_oss_path)
 
                 # Build with appropriate arguments
                 build_args = {"VSCODE_TYPE": vscode_type}
                 self.client.images.build(
-                    path="docker", tag=image_name, buildargs=build_args
+                    path=docker_path, tag=image_name, buildargs=build_args
                 )
                 self.client.images.get(image_name)
 
@@ -1009,12 +1013,12 @@ class PwP:
         # Run vscode in the background
         self.run_command("mkdir -p /home/devuser/evaluation", root=root)
         self.run_command("code --disable-workspace-trust --no-sandbox --disable-gpu /home/devuser/evaluation", root=root)
-
+        window_title = "Code - OSS" if not self.vscode_type == 'official' else "VS Code"
         if maximize:
             # Maximize the window
             while True:
-                self.run_command('wmctrl -i -r $(wmctrl -l | grep "Code - OSS" | awk \'{print $1}\') -e 0,0,0,1920,1080', wait=2)
-                window_info = self.run_command('wmctrl -lG | grep "Code - OSS"')[0]
+                self.run_command('wmctrl -i -r $(wmctrl -l | grep "'+window_title+'" | awk \'{print $1}\') -e 0,0,0,1920,1080', wait=2)
+                window_info = self.run_command('wmctrl -lG | grep "'+window_title+'"')[0]
                 # Get window geometry 
                 # Check if window dimensions match target
                 if '1920 1080' in window_info:

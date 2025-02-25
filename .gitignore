@@ -2,3 +2,6 @@ src/pwp/docker/VSCode-linux-x64/code-oss
 __pycache__
 
 *.egg-info
+
+dist/
+build/

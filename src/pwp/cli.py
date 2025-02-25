@@ -17,9 +17,12 @@ def main():
     # Environment command
     env_parser = subparsers.add_parser("env", help="Run PWP environment")
     env_parser.add_argument("--image", default="pwp_env", help="Docker image name")
-    env_parser.add_argument("--no_vnc", action="store_false", dest="vnc", help="Disable VNC (enabled by default)")
+    env_parser.add_argument("--vnc", action="store_true", help="Enable VNC")
     env_parser.add_argument(
         "--ffmpeg", action="store_true", help="Enable ffmpeg streaming"
+    )
+    env_parser.add_argument(
+        "--vscode-type", choices=['official', 'opensource'], default='opensource', help="VS Code type"
     )
 
     # Benchmark command
@@ -37,7 +40,7 @@ def main():
     args = parser.parse_args()
 
     if args.command == "env":
-        env = PwP(image_name=args.image, enable_vnc=args.vnc, enable_ffmpeg=args.ffmpeg)
+        env = PwP(image_name=args.image, enable_vnc=args.vnc, enable_ffmpeg=args.ffmpeg, vscode_type=args.vscode_type)
         # Run vscode in the background
         env.run_vscode()
         print(f"PWP Environment started with image {args.image}")

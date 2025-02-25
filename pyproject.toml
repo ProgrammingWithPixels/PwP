@@ -3,18 +3,27 @@ requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pwp"
-version = "0.1.0"
-description = "Programming with Pixels package"
+name = "programming-with-pixels"
+version = "0.1.4"
+description = "Programming with Pixels (PwP) - A framework for computer-use software engineering agents"
 readme = "README.md"
 authors = [
-    {name = "PWP Team", email = "author@example.com"}
+    {name = "PWP Team", email = "pranjal2041@gmail.com"}
 ]
 license = {text = "MIT"}
 classifiers = [
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries",
 ]
 dependencies = [
     "google-generativeai",
@@ -28,12 +37,30 @@ dependencies = [
     "requests",
     "litellm",
     "datasets",
+    "gdown",
+    "imagehash",
 ]
 requires-python = ">=3.6"
 
+[project.optional-dependencies]
+gpu = [
+    "torch>=1.9.0",
+    "torchvision>=0.10.0",
+]
+dev = [
+    "black",
+    "isort",
+    "pytest",
+    "pytest-cov",
+    "twine",
+    "build",
+]
+
 [project.urls]
-"Homepage" = "https://github.com/yourusername/pwp"
-"Bug Tracker" = "https://github.com/yourusername/pwp/issues"
+"Homepage" = "https://github.com/ProgrammingWithPixels/pwp"
+"Documentation" = "https://www.programmingwithpixels.com"
+"Bug Tracker" = "https://github.com/ProgrammingWithPixels/pwp/issues"
+"Source Code" = "https://github.com/ProgrammingWithPixels/pwp"
 
 [project.scripts]
 pwp = "pwp.cli:main"
@@ -42,4 +69,20 @@ pwp = "pwp.cli:main"
 package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
-where = ["src"] 
+where = ["src"]
+
+[tool.setuptools.package-data]
+"pwp" = ["docker/**/*", "prompts/**/*", "tools/**/*", "env/**/*"]
+
+[tool.black]
+line-length = 88
+target-version = ['py36']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"

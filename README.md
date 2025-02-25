@@ -1,20 +1,20 @@
 # Programming with Pixels (PwP)
 
 <p align="center">
-  <img src="media/pwp_logo.png" alt="PwP Logo" width="200" height="200"/>
+  <img src="media/pwp_teaser_v4.png" alt="PwP Logo" width="100%" />
 </p>
 
 <div align="center">
 
-[![Python Version](https://img.shields.io/badge/python-3.6%2B-blue.svg)](https://www.python.org/downloads/)
+[![PyPI Version](https://img.shields.io/pypi/v/programming-with-pixels.svg)](https://pypi.org/project/programming-with-pixels/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Paper](https://img.shields.io/badge/paper-PwP-red.svg)](docs/static/pdfs/PwP_Arxiv_Submission.pdf)
-[![Website](https://img.shields.io/badge/website-PwP-orange.svg)](docs/index.html)
+[![Paper](https://img.shields.io/badge/paper-PwP-red.svg)](https://www.programmingwithpixels.com/static/pdfs/PwP_Arxiv_Submission.pdf)
+[![Website](https://img.shields.io/badge/website-PwP-orange.svg)](https://www.programmingwithpixels.com)
 
-[Paper](docs/static/pdfs/PwP_Arxiv_Submission.pdf) | 
-[Website](docs/index.html) | 
-[Dataset](docs/index.html#contrib-tab2) | 
-[Demo](docs/index.html#pwp-in-action)
+[Paper](https://www.programmingwithpixels.com/static/pdfs/PwP_Arxiv_Submission.pdf) | 
+[Website](https://www.programmingwithpixels.com) | 
+[Dataset](pwp_bench/README.md) | 
+[Demo](https://www.programmingwithpixels.com/#pwp-in-action)
 
 </div>
 
@@ -69,6 +69,21 @@ dataset = bench.get_dataset()
 task_env = bench.get_env(dataset[0])
 ```
 
+### Command Line Interface
+
+For quicker testing, PwP also comes with a convenient command-line interface:
+
+```bash
+# Start an environment
+pwp env --vnc
+
+# List available benchmark tasks
+pwp list
+
+# Run a benchmark
+pwp bench humaneval
+```
+
 ## Examples
 
 Check out the [examples](examples/) directory for demonstration scripts:
@@ -94,20 +109,6 @@ See the [benchmark documentation](pwp_bench/README.md) for more details.
 
 For detailed examples, check out the agent implementations in the [src/pwp/agents](src/pwp/agents/) directory. Each agent type can be customized with different LLM backends and system prompts to optimize for various tasks.
 
-## Command Line Interface
-
-For quicker testing, PwP also comes with a convenient command-line interface:
-
-```bash
-# Start an environment
-pwp env --image pwp_env --vnc
-
-# List available benchmark tasks
-pwp list
-
-# Run a benchmark
-pwp bench humaneval
-```
 
 ## Building Custom Environments
 

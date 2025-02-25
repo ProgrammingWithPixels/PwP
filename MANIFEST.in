@@ -1,0 +1,12 @@
+include LICENSE
+include README.md
+include README.rst
+include requirements.txt
+
+# Include Docker files
+recursive-include src/pwp/docker *
+
+# Include other non-Python files
+recursive-include src/pwp/prompts *
+recursive-include src/pwp/tools *
+recursive-include src/pwp/env * 
