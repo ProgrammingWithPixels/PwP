@@ -165,11 +165,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you use PwP in your research, please cite our paper:
 
 ```bibtex
-@article{pwp2025,
-  title={Programming with Pixels: Computer-Use Meets Software Engineering},
-  author={Aggarwal, Pranjal and Welleck, Sean},
-  journal={arXiv preprint arXiv:2502.00000},
-  year={2025}
+@misc{aggarwal2025programmingpixelscomputerusemeets,
+      title={Programming with Pixels: Computer-Use Meets Software Engineering}, 
+      author={Pranjal Aggarwal and Sean Welleck},
+      year={2025},
+      eprint={2502.18525},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2502.18525}, 
 }
 ```
 
