@@ -8,10 +8,10 @@
 
 [![PyPI Version](https://img.shields.io/pypi/v/programming-with-pixels.svg)](https://pypi.org/project/programming-with-pixels/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Paper](https://img.shields.io/badge/paper-PwP-red.svg)](https://www.programmingwithpixels.com/static/pdfs/PwP_Arxiv_Submission.pdf)
+[![Paper](https://img.shields.io/badge/paper-PwP-red.svg)](https://arxiv.org/pdf/2502.18525.pdf)
 [![Website](https://img.shields.io/badge/website-PwP-orange.svg)](https://www.programmingwithpixels.com)
 
-[Paper](https://www.programmingwithpixels.com/static/pdfs/PwP_Arxiv_Submission.pdf) | 
+[Paper](https://arxiv.org/pdf/2502.18525.pdf) | 
 [Website](https://www.programmingwithpixels.com) | 
 [Dataset](pwp_bench/README.md) | 
 [Demo](https://www.programmingwithpixels.com/#pwp-in-action)
